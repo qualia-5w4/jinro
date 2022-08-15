@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>人狼</title>
 </head>
 <body>
-    hello
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <h2>人狼というゲーム</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="profile-container">
+            <div class="profile">
+                <div class="avatar-border">
+                    <span id="avatar" class="avatar"></span>
+                    <button onclick="changeAvatar()" class="avatar-change"></button>
+                </div>
+                <div class="nickname">
+                    <input type="text" placeholder="ニックネーム1351"
+                    maxlength="20">
+                </div>
+            </div>
+        </div>
+        <div class="options">
+            <button type="small" class="button-small">
+                <strong><a href="#">村を作成</a></strong>
+            </button>
+            <button type="small" class="button-small">
+                <strong><a href="#">村に参加</a></strong>
+            </button>
+        </div>
+    </main>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
